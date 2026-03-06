@@ -20,12 +20,12 @@ const PALETTE0: [Color; 5] = [
     Color { r: 255, g: 255, b: 0 },   // Yellow
 ];
 
-const PALETTE1: [Color; 5] = [
-    Color { r: 255, g: 0, b: 128 },  // Hot Pink
-    Color { r: 0, g: 255, b: 128 },  // Electric Green
-    Color { r: 128, g: 0, b: 255 },  // Deep Purple
-    Color { r: 0, g: 128, b: 255 },  // Tech Blue
-    Color { r: 255, g: 128, b: 0 },  // Neon Orange
+const PALETTE1: [Color; 8] = [
+    Color { r: 255, g:   0, b:   0 }, // Red
+    Color { r: 255, g: 128, b:   0 }, // Orange
+    Color { r: 255, g: 255, b:   0 }, // Yellow
+    Color { r:   0, g: 255, b:   0 }, // Green
+    Color { r:   0, g: 255, b: 255 }, // Cyan (between green and blue)
 ];
 
 pub fn get_color(iterations: f64, max_iterations: f64, palette_id: u32) -> (u8, u8, u8) {
